@@ -1,0 +1,329 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    background-color: #fff;
+
+    /* Make the body take the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Page Container */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Ensures content grows to take available space */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f4b400; /* Highlight color for hover */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 5%;
+    background-color: #fff;
+    min-height: calc(100vh - 80px); /* Adjust for the header height */
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h3 {
+    color: #f4b400;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-buttons .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-buttons .btn-yellow {
+    background-color: #f4b400;
+    color: #fff;
+}
+
+.hero-buttons .btn-yellow:hover {
+    background-color: #e5a900;
+}
+
+.hero-buttons .btn-white {
+    background-color: #fff;
+    border: 2px solid #333;
+    color: #333;
+}
+
+.hero-buttons .btn-white:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.hero-image img {
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 2rem;
+    background-color: #fff; /* Consistent white background */
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 1rem 1rem;
+    line-height: 1.5;
+}
+
+.card .btn {
+    align-self: center;
+    margin: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff; /* Consistent white background */
+}
+
+.about-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.about-content .btn {
+    display: inline-block; /* Makes it look like a button */
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #f4b400;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.about-content .btn:hover {
+    background-color: #e5a900;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact-section h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 0.75rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        margin-top: 2rem;
+        max-width: 80%;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-image img {
+        margin-top: 1.5rem;
+    }
+}
